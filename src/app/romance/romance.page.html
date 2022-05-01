@@ -1,0 +1,24 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="home" icon="home"></ion-back-button>
+  </ion-buttons>
+  
+</ion-toolbar>
+<ion-content>
+  <ion-card>
+  <ion-title id="contenedor">PELICULAS DE ROMANCE</ion-title>
+  <ion-item  *ngFor="let romance of promance">
+  <ion-label>{{romance.name}}</ion-label>
+    <ion-label>{{romance.categoria}}</ion-label>
+    <ion-label>{{romance.estrella}}</ion-label>
+    <div class="ec-stars-wrapper">
+    <a data-value="1" title="1 estrellas">&#9733;</a>
+    <a data-value="2" title="2 estrellas">&#9733;</a>s
+    <a data-value="3" title="3 estrellas">&#9733;</a>
+    <a data-value="4" title="4 estrellas">&#9733;</a>
+    <a data-value="5" title="5 estrellas">&#9733;</a>
+  </div>
+    <img class="img" src="{{romance.img}}">
+  </ion-item>
+  </ion-card>
+</ion-content>

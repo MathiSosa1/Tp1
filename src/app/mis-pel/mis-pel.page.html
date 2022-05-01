@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" icon="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="titulo">BIENVENIDOS AL PORTAFOLIO COMPLETO DE PELICULAS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content >
+<ion-card>
+<ion-title id="contenedor">PELICULAS DE ACCIÓN</ion-title>
+<ion-item class="ios" *ngFor="let accion of paccion">
+<ion-label >{{accion.name}}</ion-label>
+  <ion-label >{{accion.categoria}}</ion-label>
+  <ion-label >{{accion.estrella}}</ion-label>
+  <div class="ec-stars-wrapper">
+  <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+	<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>s
+	<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+	<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+	<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+</div>
+  <img class="img" src="{{accion.img}}">
+</ion-item>
+
+
+<ion-title id="contenedor">PELICULAS DE TERROR</ion-title>
+<ion-item  *ngFor="let terror of pterror">
+<ion-label>{{terror.name}}</ion-label>
+  <ion-label>{{terror.categoria}}</ion-label>
+  <ion-label>{{terror.estrella}}</ion-label>
+  <div class="ec-stars-wrapper">
+  <a data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+	<a data-value="2" title="Votar con 2 estrellas">&#9733;</a>s
+	<a data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+	<a data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+	<a data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+</div>
+  <img class="img" src="{{terror.img}}">
+</ion-item>
+
+<ion-title id="contenedor">PELICULAS DE ROMANCE</ion-title>
+<ion-item  *ngFor="let romance of promance">
+<ion-label>{{romance.name}}</ion-label>
+  <ion-label>{{romance.categoria}}</ion-label>
+  <ion-label>{{romance.estrella}}</ion-label>
+  <div class="ec-stars-wrapper">
+  <a data-value="1" title="1 estrellas">&#9733;</a>
+	<a data-value="2" title="2 estrellas">&#9733;</a>s
+	<a data-value="3" title="3 estrellas">&#9733;</a>
+	<a data-value="4" title="4 estrellas">&#9733;</a>
+	<a data-value="5" title="5 estrellas">&#9733;</a>
+</div>
+  <img class="img" src="{{romance.img}}">
+</ion-item>
+</ion-card>
+</ion-content>

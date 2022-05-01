@@ -1,0 +1,23 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="home" icon="home"></ion-back-button>
+  </ion-buttons>
+</ion-toolbar>
+<ion-content>
+  <ion-card>
+  <ion-title id="contenedor">PELICULAS DE ACCIÓN</ion-title>
+  <ion-item  *ngFor="let accion of paccion">
+  <ion-label>{{accion.name}}</ion-label>
+    <ion-label>{{accion.categoria}}</ion-label>
+    <ion-label>{{accion.estrella}}</ion-label>
+    <div class="ec-stars-wrapper">
+    <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+    <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>s
+    <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+    <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+    <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+  </div>
+    <img class="img" src="{{accion.img}}">
+  </ion-item>
+  </ion-card>
+ </ion-content>

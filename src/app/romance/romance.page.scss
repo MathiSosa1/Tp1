@@ -1,0 +1,51 @@
+#contenedor{
+    text-align: center;
+	font-size: 15px;
+	font-family: sans-serif; 
+	font-size: 18px; 
+	font-weight: 400; 
+	color: #ffffff; 
+	background:#104b55 
+
+  }
+
+  .img {
+    padding: 15px 10px 5px 10px;
+    margin: 2px;
+    float: right;
+    width: 100px;
+    text-align: center;
+    
+  }
+ 
+.ec-stars-wrapper {
+	/* Espacio entre los inline-block (los hijos, los `a`) 
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+	font-size: 0;
+	/* Podríamos quitarlo, 
+		pero de esta manera (siempre que no le demos padding), 
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: right;
+}
+.ec-stars-wrapper a {
+    text-align: right;
+	text-decoration: none;
+	float: left;
+	/* Volver a dar tamaño al texto */
+	font-size: 10px;
+	font-size: 1rem;
+	
+	color: rgb(212, 199, 12);
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(39, 130, 228);
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: rgb(230, 226, 24);
+}
+ion-content{ --ion-background-color:#dfe6e4; }

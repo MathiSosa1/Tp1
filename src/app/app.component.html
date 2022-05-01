@@ -1,0 +1,44 @@
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list (click)="cerrarMenu()">
+        <ion-item >
+          <ion-icon name="albums"></ion-icon>&nbsp;&nbsp;
+          <ion-label routerLink="/mis-pel"> Ver portafolio de Peliculas</ion-label>
+        </ion-item>
+      </ion-list> 
+      <ion-item>
+          <ion-icon name="logo-buffer"></ion-icon>&nbsp;&nbsp;
+          <ion-label>Filtrar por Categorias</ion-label>
+        </ion-item> 
+        <ion-list>
+          <ion-item>
+            <ion-icon name="checkmark"></ion-icon>&nbsp;&nbsp;
+            <ion-label>Accion</ion-label>
+            <ion-radio routerLink="/accion" value="accion"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="checkmark"></ion-icon>&nbsp;&nbsp;
+            <ion-label>Terror</ion-label>
+            <ion-radio routerLink="/terror" value="terror"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="checkmark"></ion-icon>&nbsp;&nbsp;
+            <ion-label>Romance</ion-label>
+            <ion-radio routerLink="/romance" value="terror" [disabled]="isDisabled"></ion-radio>
+          </ion-item>
+        </ion-list>
+        
+    
+   
+  </ion-content>
+</ion-menu>
+<ion-app>
+<ion-router-outlet id="main"></ion-router-outlet>
+
+</ion-app>

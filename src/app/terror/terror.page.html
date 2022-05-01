@@ -1,0 +1,21 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="home" icon="home"></ion-back-button>
+  </ion-buttons>
+</ion-toolbar>
+<ion-content>
+  <ion-title id="contenedor">PELICULAS DE TERROR</ion-title>
+  <ion-item  *ngFor="let terror of pterror">
+  <ion-label>{{terror.name}}</ion-label>
+    <ion-label>{{terror.categoria}}</ion-label>
+    <ion-label>{{terror.estrella}}</ion-label>
+    <div class="ec-stars-wrapper">
+    <a data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+    <a data-value="2" title="Votar con 2 estrellas">&#9733;</a>s
+    <a data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+    <a data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+    <a data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+  </div>
+    <img class="img" src="{{terror.img}}">
+  </ion-item>
+</ion-content>
