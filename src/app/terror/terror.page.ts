@@ -16,19 +16,22 @@ export class TerrorPage implements OnInit {
         "name": "ESPIRAL-EL JUEGO DEL MIEO",
         "categoria": "Terror",
          "img" :"assets/juegmie.jpg",
-        "estrella" : "Calificación : "
+        "estrella" : "Calificación : ",
+        "link": "https://www.youtube.com/watch?v=2bl7wCo-6bg"
     },
     {
       "name": "MALIGNO",
       "categoria": "Terror",
        "img" :"assets/malig.jpg",
-        "estrella" : "Calificación : "
+        "estrella" : "Calificación : ",
+        "link": "https://www.youtube.com/watch?v=0l_uo7zRnLs"
   },
   {
     "name": "RUEGA POR NOSOTROS",
     "categoria": "Terror",
      "img" :"assets/rueg.jpg",
-      "estrella" : "Calificación : "
+      "estrella" : "Calificación : ",
+      "link": "https://www.youtube.com/watch?v=6h37JM2cvsY"
 },
     ]
   }

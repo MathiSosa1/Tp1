@@ -1,16 +1,35 @@
 #contenedor{
     text-align: center;
-	font-size: 15px;
+	font-size: calc(1em + 1vw);
 	font-family: sans-serif; 
 	font-size: 18px; 
 	font-weight: 400; 
 	color: #ffffff; 
-	background:#104b55 
+	background:#104b55; 
+	
     
   }
-  .ios{
-	  font-size: 15px;
+  @media (max-width:180px){
+	.bajar{
+	  font-size: x-large;
+	  bottom: 50px;
+	  span.phone::before { content: '\A'; white-space: pre;}
+	}
+}
+  @media (max-width:320px){
+  .bajar{
+	font-size: large;
+	bottom: 50px;
+	span.phone::before { content: '\A'; white-space: pre;}
   }
+  
+}
+@media (max-width:780px){
+	.bajar{
+		font-size: small;
+		bottom: -50px;
+}
+}
   .titulo{
 
 	text-align: center;
@@ -61,5 +80,6 @@
 .ec-stars-wrapper > a:hover ~ a {
 	color: rgb(230, 226, 24);
 }
+
 
 ion-content{ --ion-background-color:#dfe6e4; }

@@ -11,10 +11,10 @@
 <ion-content >
 <ion-card>
 <ion-title id="contenedor">PELICULAS DE ACCIÓN</ion-title>
-<ion-item class="ios" *ngFor="let accion of paccion">
-<ion-label >{{accion.name}}</ion-label>
-  <ion-label >{{accion.categoria}}</ion-label>
-  <ion-label >{{accion.estrella}}</ion-label>
+<ion-item  *ngFor="let accion of paccion">
+<ion-label class="bajar">{{accion.name}}</ion-label>
+  <ion-label class="bajar" >{{accion.categoria}}</ion-label>
+  <ion-label class="bajar">{{accion.estrella}}</ion-label>
   <div class="ec-stars-wrapper">
   <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
 	<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>s
@@ -23,6 +23,7 @@
 	<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
 </div>
   <img class="img" src="{{accion.img}}">
+  <ion-button routerLink="{{accion.link}}">Ver Trailer</ion-button>
 </ion-item>
 
 
@@ -32,13 +33,15 @@
   <ion-label>{{terror.categoria}}</ion-label>
   <ion-label>{{terror.estrella}}</ion-label>
   <div class="ec-stars-wrapper">
-  <a data-value="1" title="Votar con 1 estrellas">&#9733;</a>
-	<a data-value="2" title="Votar con 2 estrellas">&#9733;</a>s
-	<a data-value="3" title="Votar con 3 estrellas">&#9733;</a>
-	<a data-value="4" title="Votar con 4 estrellas">&#9733;</a>
-	<a data-value="5" title="Votar con 5 estrellas">&#9733;</a>
-</div>
+    <a data-value="1" title="1 estrellas">&#9733;</a>
+    <a data-value="2" title="2 estrellas">&#9733;</a>s
+    <a data-value="3" title="3 estrellas">&#9733;</a>
+    <a data-value="4" title="4 estrellas">&#9733;</a>
+    <a data-value="5" title="5 estrellas">&#9733;</a>
+  </div>
   <img class="img" src="{{terror.img}}">
+  <ion-button routerLink="{{terror.link}}">Ver Trailer</ion-button>
+
 </ion-item>
 
 <ion-title id="contenedor">PELICULAS DE ROMANCE</ion-title>
@@ -54,6 +57,7 @@
 	<a data-value="5" title="5 estrellas">&#9733;</a>
 </div>
   <img class="img" src="{{romance.img}}">
+  <ion-button routerLink="{{romance.link}}">Ver Trailer</ion-button>
 </ion-item>
 </ion-card>
 </ion-content>

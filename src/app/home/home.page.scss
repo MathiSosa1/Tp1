@@ -1,12 +1,12 @@
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
+
 
 #container strong {
   font-size: 20px;
@@ -48,5 +48,26 @@
 @-webkit-keyframes blink-animation {
   to {
     visibility: hidden;
+  }
+
+}
+
+
+
+@media (max-width:300x){
+  .titulo {
+font-size: small;
+}
+.blink{
+  font-size: x-large;
+}
+
+}
+@media (max-width:550px){
+  .titulo{
+  font-size: large;
+  }
+  .blink{
+    font-size: x-small;
   }
 }

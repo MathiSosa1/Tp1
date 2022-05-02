@@ -17,19 +17,22 @@ export class RomancePage implements OnInit {
         "name": "365 DIAS",
         "categoria": "Romance",
          "img" :"assets/365d.jpg",
-        "estrella" : "Calificación : "
+        "estrella" : "Calificación : ",
+        "link": "https://www.youtube.com/watch?v=3N1jJqJ9Ziw"
     },
     {
       "name": "AFTER-ALMAS PERDIDAS",
       "categoria": "Romance",
        "img" :"assets/after.jpg",
-        "estrella" : "Calificación : "
+        "estrella" : "Calificación : ",
+        "link": "https://www.youtube.com/watch?v=speZejQwBQo"
   },
   {
     "name": "A TRAVES DE MI VENTANA",
     "categoria": "Romance",
      "img" :"assets/atraves.jpg",
-      "estrella" : "Calificación : "
+      "estrella" : "Calificación : ",
+      "link": "https://www.youtube.com/watch?v=ibjAgqsgQzc"
 },
     ]
   }

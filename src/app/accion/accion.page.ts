@@ -15,19 +15,22 @@ export class AccionPage implements OnInit {
             "name": "THE BATMAN",
             "categoria": "Acción",
              "img" :"assets/thebat.jpg",
-            "estrella" : "Calificación : "
+            "estrella" : "Calificación : ",
+            "link": "https://www.youtube.com/watch?v=fWQrd6cwJ0A"
         },
         {
           "name": "RIESGO BAJO CERO",
           "categoria": "Acción",
            "img" :"assets/ries.jpg",
-            "estrella" : "Calificación : "
+            "estrella" : "Calificación : ",
+            "link": "https://www.youtube.com/results?search_query=riesgo+bajo+cero+trailer+español"
       },
       {
         "name": "UNCHARTED-FUERA DEL MAPA",
         "categoria": "Acción",
          "img" :"assets/unchar.jpg",
-          "estrella" : "Calificación : "
+          "estrella" : "Calificación : ",
+          "link": "https://www.youtube.com/watch?v=kVgsnqAp0Kk"
     },
         ]
       }
